@@ -12,6 +12,8 @@
     "firebase": "^9.1.1",
     "firebaseui": "^5.0.0",
     "vue": "^2.6.11",
+    "vue-facebook": "^1.1.0",
+    "vue-google-login": "^2.0.5",
     "vue-router": "^3.5.2"
   },
   "devDependencies": {
