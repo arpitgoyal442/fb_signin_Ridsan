@@ -1,6 +1,13 @@
 <template>
   <div>
     <button v-on:click="handleFacebookLogin">Login</button>
+
+     <!--  -->
+      
+
+
+     <!--  -->
+
   </div>
 </template>
 
@@ -10,20 +17,16 @@ import { getAuth, signInWithPopup, FacebookAuthProvider } from "firebase/auth";
 
 export default {
   name: "Signin",
-  
-  methods: {
-      
-    handleFacebookLogin() {
-        
 
-       const provider=new FacebookAuthProvider();
-       const auth=getAuth();
+  methods: {
+    handleFacebookLogin() {
+      const provider = new FacebookAuthProvider();
+      const auth = getAuth();
       signInWithPopup(auth, provider)
         .then((result) => {
           // The signed-in user info.
-          console.log("Result"+result);
+          console.log("Result" + result);
           const user = result.user;
-          
 
           // This gives you a Facebook Access Token. You can use it to access the Facebook API.
           const credential = FacebookAuthProvider.credentialFromResult(result);
@@ -33,7 +36,7 @@ export default {
         })
         .catch((error) => {
           // Handle Errors here.
-          console.log("Error"+error);
+          console.log("Error" + error);
           const errorCode = error.code;
           const errorMessage = error.message;
           // The email of the user's account used.
