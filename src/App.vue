@@ -33,6 +33,15 @@ export default {
                     longtitle: true
                 }
             }
+  },
+  methods:
+  {
+    onSuccess(googleUser)
+    {
+      console.log(googleUser);
+      console.log(googleUser.getBasicProfile());
+
+    }
   }
 }
 </script>
