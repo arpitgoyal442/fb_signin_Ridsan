@@ -1,24 +1,13 @@
 <template>
   <div>
-    <h1>Hello world</h1>
-    <button v-on:click="handleFacebookLogin">Login</button>
-
-     <!--  -->
-      
-
-
-     <!--  -->
-
+    <button v-on:click="handleFacebookLogin">Sign In With Facebook</button>
   </div>
 </template>
 
 <script>
-// import { FacebookAuthProvider } from "firebase/auth";
 import { getAuth, signInWithPopup, FacebookAuthProvider } from "firebase/auth";
-
 export default {
-  name: "Signin",
-
+  name: "FacebookSignin",
   methods: {
     handleFacebookLogin() {
       const provider = new FacebookAuthProvider();
@@ -48,16 +37,21 @@ export default {
           // ...
         });
     },
-  },
+
+  }
 };
+
+
 </script>
-
-
 
 <style scoped>
 button {
-  background: aqua;
-  border-radius: 20px;
-  font-size: 25px;
+  background: rgba(59, 89, 152);
+  border-radius: 15px;
+  font-size: 15px;
+  padding: 5px;
+  font-weight: 400;
+  color: white;
+  width: 200px;
 }
 </style>
