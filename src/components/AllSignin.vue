@@ -32,7 +32,7 @@ export default {
 
 .FacebookSignin {
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 31px;
   margin-bottom: 30px;
 }
 
