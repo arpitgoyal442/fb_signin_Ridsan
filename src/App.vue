@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     
-    <signin/>
-    <GoogleLogin :params="params" :renderParams="renderParams" :onSuccess="onSuccess" :onFailure="onFailure"></GoogleLogin>j
+    <signin />
+    <GoogleLogin :params="params" :renderParams="renderParams" :onSuccess="onSuccess" :onFailure="onFailure"></GoogleLogin>
   </div>
   
 </template>
@@ -55,4 +55,6 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+
 </style>

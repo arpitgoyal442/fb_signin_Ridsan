@@ -1,18 +1,11 @@
 <template>
-  <div>
+  <div >
     <button v-on:click="handleFacebookLogin">Login</button>
-
-     <!--  -->
-      
-
-
-     <!--  -->
-
   </div>
 </template>
 
 <script>
-// import { FacebookAuthProvider } from "firebase/auth";
+
 import { getAuth, signInWithPopup, FacebookAuthProvider } from "firebase/auth";
 
 export default {
@@ -44,7 +37,7 @@ export default {
           // The AuthCredential type that was used.
           const credential = FacebookAuthProvider.credentialFromError(error);
 
-          // ...
+          
         });
     },
   },
@@ -59,4 +52,6 @@ button {
   border-radius: 20px;
   font-size: 25px;
 }
+
+
 </style>
