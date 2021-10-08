@@ -2,7 +2,7 @@
 
   <div>
     <b-card
-       title="SIGN IN"
+       title="Sign In"
      
       style="max-width: 20rem"
       class="mb-2"
