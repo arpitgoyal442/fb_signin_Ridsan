@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     
-    <AllSignin/>
+    <AllSignin class="AllSignin"/>
  
   </div>
   
@@ -25,11 +25,17 @@ export default {
 <style lang="scss">
 @import "~@/assets/scss/vendors/bootstrap-vue/index";
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(255, 211, 17, 0.89);
   text-align: center;
+  display: inline-block;
   
+}
+
+.AllSignin{
+  margin-left: 35vw;
+  margin-top: 25vh;
 }
 
 

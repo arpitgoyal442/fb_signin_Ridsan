@@ -20,6 +20,7 @@ export default {
 
           // This gives you a Facebook Access Token. You can use it to access the Facebook API.
           const credential = FacebookAuthProvider.credentialFromResult(result);
+          console.log(credential);
           const accessToken = credential.accessToken;
 
           // ...
